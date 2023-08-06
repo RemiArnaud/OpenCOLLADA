@@ -22,8 +22,9 @@
 #include "COLLADAMayaSyntax.h"
 #include "COLLADAMayaConversion.h"
 #include "COLLADAMayaExportOptions.h"
+#if MAYA_API_VERSION <= 20190300
 #include "COLLADAMayaHwShaderExporter.h"
-
+#endif
 #include "COLLADASWNode.h"
 #include "COLLADASWParamTemplate.h"
 #include "COLLADASWConstants.h"
@@ -38,11 +39,11 @@
 /* define WIN32 to work around CFGX WIN64 compilation */
 #define WIN32
 #endif
-
+#if MAYA_API_VERSION <= 20190300
 #include "cgfxShaderNode.h"
 
 #include <cgfxFindImage.h>
-
+#endif
 namespace COLLADAMaya
 {
 
@@ -282,7 +283,7 @@ namespace COLLADAMaya
 
         return &mMaterialMap;
     }
-
+#if MAYA_API_VERSION <= 20190300
     //---------------------------------------
     void MaterialExporter::setSetParam ( const cgfxShaderNode* shaderNodeCgfx, const cgfxAttrDef* attribute )
     {
@@ -753,7 +754,7 @@ namespace COLLADAMaya
         }
 #endif // MAYA_API_VERSION < 201200
     }
-
+#endif // MAYA_API_VERSION <= 20190300
     // --------------------------------------
     void MaterialExporter::setShaderFxFileUri( const COLLADASW::URI& shaderFxFileName )
     {
@@ -799,13 +800,14 @@ namespace COLLADAMaya
         // Opens the current effect instance. 
         effectInstance.open();
 
+#if MAYA_API_VERSION <= 20190300
         // Custom hardware shaders derived from MPxHardwareShader (the new stuff)
         if ( shader.hasFn ( MFn::kPluginHwShaderNode ) )
         {
             // Export the effect technique reference and the hardware shader parameters.
             exportCustomHwShaderNode ( effectInstance, shader );
         }
-
+#endif
         // TODO
 //         // Export the user defined instance_effect extra data from import (extra preservation).
 //         mDocumentExporter->exportExtraData ( shader, COLLADAFW::ExtraKeys::INSTANCE_EFFECT );

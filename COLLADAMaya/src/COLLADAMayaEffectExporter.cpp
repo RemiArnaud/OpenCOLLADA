@@ -20,12 +20,14 @@
 #include "COLLADAMayaDagHelper.h"
 #include "COLLADAMayaShaderHelper.h"
 #include "COLLADAMayaSyntax.h"
+#if MAYA_API_VERSION <= 20190300
 #if MAYA_API_VERSION > 700 
 #include "COLLADAMayaHwShaderExporter.h"
 #endif
 #if MAYA_API_VERSION >= 201500
 #include "COLLADAMayaShaderFXShaderExporter.h"
 #endif
+#endif // MAYA_API_VERSION <= 20190300
 #include "COLLADAMayaAttributeParser.h"
 
 #include "COLLADASWNode.h"
@@ -215,6 +217,7 @@ namespace COLLADAMaya
             MGlobal::displayError("Export of ColladaFXPasses not implemented!");
         }
 
+#if MAYA_API_VERSION <= 20190300
 #if MAYA_API_VERSION > 700 
         // Custom hardware shaders derived from MPxHardwareShader (the new stuff)
         else if ( shader.hasFn ( MFn::kPluginHwShaderNode ) )
@@ -236,13 +239,14 @@ namespace COLLADAMaya
             MGlobal::displayError("Export HardwareShader not implemented!");
         }
 #endif
+
 #if MAYA_API_VERSION >= 201500
 		else if (shader.hasFn(MFn::kPluginHardwareShader) && shaderNodeTypeName == SHADERFX_SHADER.c_str())
 		{
 			exportShaderFXShader(colladaEffectId, &effectProfile, shader);
 		}
 #endif
-
+#endif // MAYA_API_VERSION <= 20190300
         else
         {
             // For the constant shader, you should use the "surface shader" node in Maya
@@ -386,6 +390,7 @@ namespace COLLADAMaya
 		AttributeParser::parseAttributes(fnNode, extraAttributeExporter);
 	}
 
+#if MAYA_API_VERSION <= 20190300
     // ---------------------------------
     bool EffectExporter::exportHwShaderNode (
         const String &effectId,
@@ -399,7 +404,7 @@ namespace COLLADAMaya
     }
 
 	//-------------------------------------------------------------------------
-#if MAYA_API_VERSION >= 201500
+
 	void EffectExporter::exportShaderFXShader(
 		const String & effectId,
 		COLLADASW::EffectProfile* effectProfile,
@@ -408,7 +413,7 @@ namespace COLLADAMaya
 		ShaderFXShaderExporter shaderFXShaderExporter(*mDocumentExporter, *effectProfile, effectId);
 		shaderFXShaderExporter.exportShaderFXShader(shader);
 	}
-#endif
+#endif // MAYA_API_VERSION <= 20190300
 
     //------------------------------------------------------
     void EffectExporter::exportConstantShader (

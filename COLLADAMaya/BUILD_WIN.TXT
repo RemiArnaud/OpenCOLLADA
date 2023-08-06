@@ -5,22 +5,20 @@ Requirements:
 To build the COLLADAMaya plug-in, you need following installations:
 -	Autodesk Maya, including the SDK
 Supported versions of Autodesk Maya are:
-	Autodesk Maya 2011
-	Autodesk Maya 2012
-	Autodesk Maya 2013
-	Autodesk Maya 2014
-	Autodesk Maya 2015
-	Autodesk Maya 2016
-	Autodesk Maya 2017
-	Autodesk Maya 2018
+	2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+
+note that CG support has been removed since Maya 2020
 
 -	Microsoft Visual Studio 2013 (for loading the solution, 2012 may work too)
-    AND additioal versions of Visual Studio depending of the Maya version:
+    AND additional versions of Visual Studio depending of the Maya version:
         Visual 2008 for Maya 2011-2012
 	Visual 2010 for Maya 2013-2014
 	Visual 2012 for Maya 2014-2016
 	Visual 2012 update 4 for Maya 2017
-        Visual Studio 2015 update 3 for Maya 2018
+        Visual Studio 2015 update 3 for Maya 2018-2019
+        Visual Studio 2017 for Maya 2020
+        Visual Studio 2019 for Maya 2022 2023
+        Visual Studio 2022 for Maya 2024
 
 
 You find the MVS solution file in COLLADAMaya/COLLADAMaya.sln

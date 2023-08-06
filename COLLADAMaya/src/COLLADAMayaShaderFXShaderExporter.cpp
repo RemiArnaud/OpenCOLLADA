@@ -407,7 +407,7 @@ namespace COLLADAMaya
 		, mTextureIndex(0)
 		, mEffectId(effectId)
 	{}
-
+#if MAYA_API_VERSION <= 20190300
 	void ShaderFXShaderExporter::exportShaderFXShader(MObject & shaderObject )
     {
         MStatus status;
@@ -451,7 +451,7 @@ namespace COLLADAMaya
 			}
 		}
     }
-
+#endif // MAYA_API_VERSION <= 20190300
 	void ShaderFXShaderExporter::exportSamplerAndSurface(const MFnDependencyNode & node, const MObject & attr)
 	{
 		MStatus status;

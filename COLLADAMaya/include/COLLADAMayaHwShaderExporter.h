@@ -24,7 +24,7 @@
 #include "COLLADASWValueType.h"
 #include "COLLADASWEffectProfile.h"
 #include "COLLADASWShader.h"
-
+#if MAYA_API_VERSION <= 20190300
 #include "cgfxAttrDef.h"
 
 #include <maya/MFnDependencyNode.h>
@@ -165,5 +165,6 @@ namespace COLLADAMaya
 
     };
 }
+#endif // (MAYA_API_VERSION <= 201600)
 
 #endif // __COLLADA_MAYA_HW_SHADER_EXPORTER_H__

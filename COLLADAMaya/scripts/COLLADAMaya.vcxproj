@@ -153,6 +153,30 @@
       <Configuration>DebugPlugin2020</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPlugin2022|Win32">
+      <Configuration>DebugPlugin2022</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPlugin2022|x64">
+      <Configuration>DebugPlugin2022</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPlugin2023|Win32">
+      <Configuration>DebugPlugin2023</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPlugin2023|x64">
+      <Configuration>DebugPlugin2023</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPlugin2024|Win32">
+      <Configuration>DebugPlugin2024</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPlugin2024|x64">
+      <Configuration>DebugPlugin2024</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="ReleaseConsole2011|Win32">
       <Configuration>ReleaseConsole2011</Configuration>
       <Platform>Win32</Platform>
@@ -305,11 +329,35 @@
       <Configuration>ReleasePlugin2020</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleasePlugin2022|Win32">
+      <Configuration>ReleasePlugin2022</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleasePlugin2022|x64">
+      <Configuration>ReleasePlugin2022</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleasePlugin2023|Win32">
+      <Configuration>ReleasePlugin2023</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleasePlugin2023|x64">
+      <Configuration>ReleasePlugin2023</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleasePlugin2024|Win32">
+      <Configuration>ReleasePlugin2024</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleasePlugin2024|x64">
+      <Configuration>ReleasePlugin2024</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{60331F1F-2334-42AF-80A8-A4A6E3299186}</ProjectGuid>
     <RootNamespace>COLLADAMaya</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2012|Win32'" Label="Configuration">
@@ -553,6 +601,24 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2022|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2024|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2023|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseConsole2013|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v100</PlatformToolset>
@@ -597,7 +663,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseConsole2020|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -678,7 +744,22 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2020|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2022|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2023|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2024|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseConsoleProgDB2011|x64'" Label="Configuration">
@@ -841,6 +922,15 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2020|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2022|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2024|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2023|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseConsole2013|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
@@ -911,6 +1001,15 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2020|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2022|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2023|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2024|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseConsoleProgDB2011|x64'" Label="PropertySheets">
@@ -1065,6 +1164,24 @@
     <GenerateManifest>true</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2020|x64'">
+    <OutDir>..\bin\win\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\obj\win\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2022|x64'">
+    <OutDir>..\bin\win\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\obj\win\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2023|x64'">
+    <OutDir>..\bin\win\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\obj\win\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2024|x64'">
     <OutDir>..\bin\win\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>..\obj\win\$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
@@ -1311,6 +1428,24 @@
     <GenerateManifest>true</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2020|x64'">
+    <OutDir>..\bin\win\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\obj\win\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2022|x64'">
+    <OutDir>..\bin\win\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\obj\win\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2024|x64'">
+    <OutDir>..\bin\win\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\obj\win\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2023|x64'">
     <OutDir>..\bin\win\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>..\obj\win\$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
@@ -2490,6 +2625,84 @@ copy "$(ProjectDir)*.mel" "%25MAYA_PATH2016_X64%25\scripts\others"
     </Link>
     <PostBuildEvent>
       <Message>Copying plugin to Maya install</Message>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2020|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;$(MAYA_PATH2020_X64)\include;$(MAYA_PATH2020_X64)\devkit\plug-ins;..\..\COLLADABaseUtils\include;..\..\COLLADAStreamWriter\include;..\..\Externals\Cg\include;..\..\COLLADASaxFrameworkLoader\include;..\..\COLLADASaxFrameworkLoader\include\generated15;..\..\COLLADAFramework\include;..\..\GeneratedSaxParser\include;..\..\Externals\LibXML\include;..\..\Externals\MayaDataModel\include;..\..\DAE2MA\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_WINDOWS;_AFXDLL;_MBCS;NT_PLUGIN;REQUIRE_IOSTREAM;CM_EXPORTS;GLUT_NO_LIB_PRAGMA;GLUT_NO_WARNING_DISABLE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MLIBRARY_DONTUSE_MFC_MANIFEST;IWILLNOTUSEASSERTSOUTSIDETHISSCOPE</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>COLLADAMayaStableHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/export:initializePlugin /export:uninitializePlugin %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Foundation.lib;OpenMaya.lib;OpenMayaAnim.lib;OpenMayaRender.lib;OpenMayaUI.lib;cg.lib;cgGL.lib;OpenGL32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).mll</OutputFile>
+      <Version>1.3</Version>
+      <AdditionalLibraryDirectories>$(MAYA_PATH2020_X64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying plugin to Maya install</Message>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2022|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;$(MAYA_PATH2022_X64)\include;$(MAYA_PATH2022_X64)\devkit\plug-ins;..\..\COLLADABaseUtils\include;..\..\COLLADAStreamWriter\include;..\..\Externals\Cg\include;..\..\COLLADASaxFrameworkLoader\include;..\..\COLLADASaxFrameworkLoader\include\generated15;..\..\COLLADAFramework\include;..\..\GeneratedSaxParser\include;..\..\Externals\LibXML\include;..\..\Externals\MayaDataModel\include;..\..\DAE2MA\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_WINDOWS;_AFXDLL;_MBCS;NT_PLUGIN;REQUIRE_IOSTREAM;CM_EXPORTS;GLUT_NO_LIB_PRAGMA;GLUT_NO_WARNING_DISABLE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MLIBRARY_DONTUSE_MFC_MANIFEST;IWILLNOTUSEASSERTSOUTSIDETHISSCOPE</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>COLLADAMayaStableHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/export:initializePlugin /export:uninitializePlugin %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Foundation.lib;OpenMaya.lib;OpenMayaAnim.lib;OpenMayaRender.lib;OpenMayaUI.lib;cg.lib;cgGL.lib;OpenGL32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).mll</OutputFile>
+      <Version>1.3</Version>
+      <AdditionalLibraryDirectories>$(MAYA_PATH2022_X64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying plugin to Maya install</Message>
       <Command>if not exist "..\bin\win\$(Platform)\$(Configuration)" (
 echo Creating ..\bin\win\$(Platform)\$(Configuration)
 mkdir "..\bin\win\$(Platform)\$(Configuration)" &gt; nul
@@ -2513,7 +2726,7 @@ copy "$(ProjectDir)*.mel" "%25MAYA_PATH2016_X64%25\scripts\others"
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2020|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2023|x64'">
     <PreBuildEvent>
       <Command>
       </Command>
@@ -2523,7 +2736,7 @@ copy "$(ProjectDir)*.mel" "%25MAYA_PATH2016_X64%25\scripts\others"
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\include;$(MAYA_PATH2020_X64)\include;$(MAYA_PATH2020_X64)\devkit\plug-ins;$(MAYA_PATH2020_X64)\devkit\plug-ins\cgFx;..\..\COLLADABaseUtils\include;..\..\COLLADAStreamWriter\include;..\..\Externals\Cg\include;..\..\COLLADASaxFrameworkLoader\include;..\..\COLLADASaxFrameworkLoader\include\generated15;..\..\COLLADAFramework\include;..\..\GeneratedSaxParser\include;..\..\Externals\LibXML\include;..\..\Externals\MayaDataModel\include;..\..\DAE2MA\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;$(MAYA_PATH2023_X64)\include;$(MAYA_PATH2023_X64)\devkit\plug-ins;..\..\COLLADABaseUtils\include;..\..\COLLADAStreamWriter\include;..\..\Externals\Cg\include;..\..\COLLADASaxFrameworkLoader\include;..\..\COLLADASaxFrameworkLoader\include\generated15;..\..\COLLADAFramework\include;..\..\GeneratedSaxParser\include;..\..\Externals\LibXML\include;..\..\Externals\MayaDataModel\include;..\..\DAE2MA\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN64;_DEBUG;_WINDOWS;_AFXDLL;_MBCS;NT_PLUGIN;REQUIRE_IOSTREAM;CM_EXPORTS;GLUT_NO_LIB_PRAGMA;GLUT_NO_WARNING_DISABLE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MLIBRARY_DONTUSE_MFC_MANIFEST;IWILLNOTUSEASSERTSOUTSIDETHISSCOPE</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -2538,7 +2751,65 @@ copy "$(ProjectDir)*.mel" "%25MAYA_PATH2016_X64%25\scripts\others"
       <AdditionalDependencies>Foundation.lib;OpenMaya.lib;OpenMayaAnim.lib;OpenMayaRender.lib;OpenMayaUI.lib;cg.lib;cgGL.lib;OpenGL32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName).mll</OutputFile>
       <Version>1.3</Version>
-      <AdditionalLibraryDirectories>$(MAYA_PATH2020_X64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(MAYA_PATH2023_X64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying plugin to Maya install</Message>
+      <Command>if not exist "..\bin\win\$(Platform)\$(Configuration)" (
+echo Creating ..\bin\win\$(Platform)\$(Configuration)
+mkdir "..\bin\win\$(Platform)\$(Configuration)" &gt; nul
+)
+
+copy $(TargetPath) ..\bin\win\$(Platform)\$(Configuration)
+
+if not exist "%25MAYA_PATH2016_X64%25\bin\plug-ins" (
+echo Creating "%25MAYA_PATH2016_X64%25\bin\plug-ins"
+mkdir "%25MAYA_PATH2016_X64%25\bin\plug-ins" &gt; nul
+)
+
+copy "$(TargetDir)\COLLADAMaya.mll" "%25MAYA_PATH2016_X64%25\bin\plug-ins"
+
+if not exist "%25MAYA_PATH2016_X64%25\scripts\others" (
+echo Creating "%25MAYA_PATH2016_X64%25\scripts\others"
+mkdir "%25MAYA_PATH2016_X64%25\scripts\others" &gt; nul
+)
+
+copy "$(ProjectDir)*.mel" "%25MAYA_PATH2016_X64%25\scripts\others"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2024|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;$(MAYA_PATH2024_X64)\include;$(MAYA_PATH2024_X64)\devkit\plug-ins;..\..\COLLADABaseUtils\include;..\..\COLLADAStreamWriter\include;..\..\Externals\Cg\include;..\..\COLLADASaxFrameworkLoader\include;..\..\COLLADASaxFrameworkLoader\include\generated15;..\..\COLLADAFramework\include;..\..\GeneratedSaxParser\include;..\..\Externals\LibXML\include;..\..\Externals\MayaDataModel\include;..\..\DAE2MA\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_WINDOWS;_AFXDLL;_MBCS;NT_PLUGIN;REQUIRE_IOSTREAM;CM_EXPORTS;GLUT_NO_LIB_PRAGMA;GLUT_NO_WARNING_DISABLE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MLIBRARY_DONTUSE_MFC_MANIFEST;IWILLNOTUSEASSERTSOUTSIDETHISSCOPE</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>COLLADAMayaStableHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/export:initializePlugin /export:uninitializePlugin %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Foundation.lib;OpenMaya.lib;OpenMayaAnim.lib;OpenMayaRender.lib;OpenMayaUI.lib;cg.lib;cgGL.lib;OpenGL32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).mll</OutputFile>
+      <Version>1.3</Version>
+      <AdditionalLibraryDirectories>$(MAYA_PATH2024_X64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>msvcrt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
@@ -3729,7 +4000,7 @@ copy $(TargetPath) ..\testsuite &gt; nul
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>..\include;$(MAYA_PATH2019_X64)\include;$(MAYA_PATH2019_X64)\devkit\plug-ins;$(MAYA_PATH2019_X64)\devkit\plug-ins\cgFX;..\..\COLLADABaseUtils\include;..\..\COLLADAStreamWriter\include;..\..\Externals\Cg\include;..\..\COLLADASaxFrameworkLoader\include;..\..\COLLADASaxFrameworkLoader\include\generated15;..\..\COLLADAFramework\include;..\..\GeneratedSaxParser\include;..\..\Externals\LibXML\include;..\..\Externals\MayaDataModel\include;..\..\DAE2MA\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;$(MAYA_PATH2020_X64)\include;$(MAYA_PATH2020_X64)\devkit\plug-ins;..\..\COLLADABaseUtils\include;..\..\COLLADAStreamWriter\include;..\..\Externals\Cg\include;..\..\COLLADASaxFrameworkLoader\include;..\..\COLLADASaxFrameworkLoader\include\generated15;..\..\COLLADAFramework\include;..\..\GeneratedSaxParser\include;..\..\Externals\LibXML\include;..\..\Externals\MayaDataModel\include;..\..\DAE2MA\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_AFXDLL;_MBCS;NT_PLUGIN;REQUIRE_IOSTREAM;CM_EXPORTS;GLUT_NO_LIB_PRAGMA;GLUT_NO_WARNING_DISABLE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;MLIBRARY_DONTUSE_MFC_MANIFEST;IWILLNOTUSEASSERTSOUTSIDETHISSCOPE</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -3743,7 +4014,7 @@ copy $(TargetPath) ..\testsuite &gt; nul
       <AdditionalDependencies>Foundation.lib;OpenMaya.lib;OpenMayaAnim.lib;OpenMayaRender.lib;OpenMayaUI.lib;cg.lib;cgGL.lib;OpenGL32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
       <Version>1.3</Version>
-      <AdditionalLibraryDirectories>$(MAYA_PATH2019_X64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(MAYA_PATH2020_X64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>
@@ -4429,7 +4700,7 @@ copy "$(ProjectDir)*.mel" "%25MAYA_PATH2018_X64%25\scripts\others"
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>..\include;$(MAYA_PATH2020_X64)\include;$(MAYA_PATH2020_X64)\devkit\plug-ins;$(MAYA_PATH2020_X64)\devkit\plug-ins\cgFx;..\..\COLLADABaseUtils\include;..\..\COLLADAStreamWriter\include;..\..\Externals\Cg\include;..\..\COLLADASaxFrameworkLoader\include;..\..\COLLADASaxFrameworkLoader\include\generated15;..\..\COLLADAFramework\include;..\..\GeneratedSaxParser\include;..\..\Externals\LibXML\include;..\..\Externals\MayaDataModel\include;..\..\DAE2MA\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;$(MAYA_PATH2019_X64)\include;$(MAYA_PATH2019_X64)\devkit\plug-ins;$(MAYA_PATH2019_X64)\devkit\plug-ins\cgFx;..\..\COLLADABaseUtils\include;..\..\COLLADAStreamWriter\include;..\..\Externals\Cg\include;..\..\COLLADASaxFrameworkLoader\include;..\..\COLLADASaxFrameworkLoader\include\generated15;..\..\COLLADAFramework\include;..\..\GeneratedSaxParser\include;..\..\Externals\LibXML\include;..\..\Externals\MayaDataModel\include;..\..\DAE2MA\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_AFXDLL;_MBCS;NT_PLUGIN;REQUIRE_IOSTREAM;CM_EXPORTS;GLUT_NO_LIB_PRAGMA;GLUT_NO_WARNING_DISABLE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;MLIBRARY_DONTUSE_MFC_MANIFEST;IWILLNOTUSEASSERTSOUTSIDETHISSCOPE;_WIN32</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -4443,7 +4714,7 @@ copy "$(ProjectDir)*.mel" "%25MAYA_PATH2018_X64%25\scripts\others"
       <AdditionalDependencies>Foundation.lib;OpenMaya.lib;OpenMayaAnim.lib;OpenMayaRender.lib;OpenMayaUI.lib;cg.lib;cgGL.lib;OpenGL32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName).mll</OutputFile>
       <Version>1.3</Version>
-      <AdditionalLibraryDirectories>$(MAYA_PATH2020_X64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(MAYA_PATH2019_X64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
@@ -4502,6 +4773,180 @@ copy "$(ProjectDir)*.mel" "%25MAYA_PATH2016_X64%25\scripts\others"
       <OutputFile>$(OutDir)$(ProjectName).mll</OutputFile>
       <Version>1.3</Version>
       <AdditionalLibraryDirectories>$(MAYA_PATH2020_X64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying plugin to Maya install</Message>
+      <Command>if not exist "..\bin\win\$(Platform)\$(Configuration)" (
+echo Creating ..\bin\win\$(Platform)\$(Configuration)
+mkdir "..\bin\win\$(Platform)\$(Configuration)" &gt; nul
+)
+
+copy $(TargetPath) ..\bin\win\$(Platform)\$(Configuration)
+
+if not exist "%25MAYA_PATH2020_X64%25\bin\plug-ins" (
+echo Creating "%25MAYA_PATH2020_X64%25\bin\plug-ins"
+mkdir "%25MAYA_PATH2020_X64%25\bin\plug-ins" &gt; nul
+)
+
+copy "$(TargetDir)\COLLADAMaya.mll" "%25MAYA_PATH2020_X64%25\bin\plug-ins"
+
+if not exist "%25MAYA_PATH2020_X64%25\scripts\others" (
+echo Creating "%25MAYA_PATH2020_X64%25\scripts\others"
+mkdir "%25MAYA_PATH2020_X64%25\scripts\others" &gt; nul
+)
+
+copy "$(ProjectDir)*.mel" "%25MAYA_PATH2020_X64%25\scripts\others"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2022|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\include;$(MAYA_PATH2022_X64)\include;$(MAYA_PATH2022_X64)\devkit\plug-ins;$(MAYA_PATH2022_X64)\devkit\plug-ins\cgFx;..\..\COLLADABaseUtils\include;..\..\COLLADAStreamWriter\include;..\..\Externals\Cg\include;..\..\COLLADASaxFrameworkLoader\include;..\..\COLLADASaxFrameworkLoader\include\generated15;..\..\COLLADAFramework\include;..\..\GeneratedSaxParser\include;..\..\Externals\LibXML\include;..\..\Externals\MayaDataModel\include;..\..\DAE2MA\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_AFXDLL;_MBCS;NT_PLUGIN;REQUIRE_IOSTREAM;CM_EXPORTS;GLUT_NO_LIB_PRAGMA;GLUT_NO_WARNING_DISABLE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;MLIBRARY_DONTUSE_MFC_MANIFEST;IWILLNOTUSEASSERTSOUTSIDETHISSCOPE;_WIN32</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>COLLADAMayaStableHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4477</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/export:initializePlugin /export:uninitializePlugin %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Foundation.lib;OpenMaya.lib;OpenMayaAnim.lib;OpenMayaRender.lib;OpenMayaUI.lib;cg.lib;cgGL.lib;OpenGL32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).mll</OutputFile>
+      <Version>1.3</Version>
+      <AdditionalLibraryDirectories>$(MAYA_PATH2022_X64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying plugin to Maya install</Message>
+      <Command>if not exist "..\bin\win\$(Platform)\$(Configuration)" (
+echo Creating ..\bin\win\$(Platform)\$(Configuration)
+mkdir "..\bin\win\$(Platform)\$(Configuration)" &gt; nul
+)
+
+copy $(TargetPath) ..\bin\win\$(Platform)\$(Configuration)
+
+if not exist "%25MAYA_PATH2020_X64%25\bin\plug-ins" (
+echo Creating "%25MAYA_PATH2020_X64%25\bin\plug-ins"
+mkdir "%25MAYA_PATH2020_X64%25\bin\plug-ins" &gt; nul
+)
+
+copy "$(TargetDir)\COLLADAMaya.mll" "%25MAYA_PATH2020_X64%25\bin\plug-ins"
+
+if not exist "%25MAYA_PATH2020_X64%25\scripts\others" (
+echo Creating "%25MAYA_PATH2020_X64%25\scripts\others"
+mkdir "%25MAYA_PATH2020_X64%25\scripts\others" &gt; nul
+)
+
+copy "$(ProjectDir)*.mel" "%25MAYA_PATH2020_X64%25\scripts\others"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2024|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\include;$(MAYA_PATH2024_X64)\include;$(MAYA_PATH2024_X64)\devkit\plug-ins;$(MAYA_PATH2024_X64)\devkit\plug-ins\cgFx;..\..\COLLADABaseUtils\include;..\..\COLLADAStreamWriter\include;..\..\Externals\Cg\include;..\..\COLLADASaxFrameworkLoader\include;..\..\COLLADASaxFrameworkLoader\include\generated15;..\..\COLLADAFramework\include;..\..\GeneratedSaxParser\include;..\..\Externals\LibXML\include;..\..\Externals\MayaDataModel\include;..\..\DAE2MA\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_AFXDLL;_MBCS;NT_PLUGIN;REQUIRE_IOSTREAM;CM_EXPORTS;GLUT_NO_LIB_PRAGMA;GLUT_NO_WARNING_DISABLE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;MLIBRARY_DONTUSE_MFC_MANIFEST;IWILLNOTUSEASSERTSOUTSIDETHISSCOPE;_WIN32</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>COLLADAMayaStableHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4477</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/export:initializePlugin /export:uninitializePlugin %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Foundation.lib;OpenMaya.lib;OpenMayaAnim.lib;OpenMayaRender.lib;OpenMayaUI.lib;cg.lib;cgGL.lib;OpenGL32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).mll</OutputFile>
+      <Version>1.3</Version>
+      <AdditionalLibraryDirectories>$(MAYA_PATH2024_X64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying plugin to Maya install</Message>
+      <Command>if not exist "..\bin\win\$(Platform)\$(Configuration)" (
+echo Creating ..\bin\win\$(Platform)\$(Configuration)
+mkdir "..\bin\win\$(Platform)\$(Configuration)" &gt; nul
+)
+
+copy $(TargetPath) ..\bin\win\$(Platform)\$(Configuration)
+
+if not exist "%25MAYA_PATH2020_X64%25\bin\plug-ins" (
+echo Creating "%25MAYA_PATH2020_X64%25\bin\plug-ins"
+mkdir "%25MAYA_PATH2020_X64%25\bin\plug-ins" &gt; nul
+)
+
+copy "$(TargetDir)\COLLADAMaya.mll" "%25MAYA_PATH2020_X64%25\bin\plug-ins"
+
+if not exist "%25MAYA_PATH2020_X64%25\scripts\others" (
+echo Creating "%25MAYA_PATH2020_X64%25\scripts\others"
+mkdir "%25MAYA_PATH2020_X64%25\scripts\others" &gt; nul
+)
+
+copy "$(ProjectDir)*.mel" "%25MAYA_PATH2020_X64%25\scripts\others"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2023|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\include;$(MAYA_PATH2023_X64)\include;$(MAYA_PATH2023_X64)\devkit\plug-ins;$(MAYA_PATH2023_X64)\devkit\plug-ins\cgFx;..\..\COLLADABaseUtils\include;..\..\COLLADAStreamWriter\include;..\..\Externals\Cg\include;..\..\COLLADASaxFrameworkLoader\include;..\..\COLLADASaxFrameworkLoader\include\generated15;..\..\COLLADAFramework\include;..\..\GeneratedSaxParser\include;..\..\Externals\LibXML\include;..\..\Externals\MayaDataModel\include;..\..\DAE2MA\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_AFXDLL;_MBCS;NT_PLUGIN;REQUIRE_IOSTREAM;CM_EXPORTS;GLUT_NO_LIB_PRAGMA;GLUT_NO_WARNING_DISABLE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;MLIBRARY_DONTUSE_MFC_MANIFEST;IWILLNOTUSEASSERTSOUTSIDETHISSCOPE;_WIN32</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>COLLADAMayaStableHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4477</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/export:initializePlugin /export:uninitializePlugin %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Foundation.lib;OpenMaya.lib;OpenMayaAnim.lib;OpenMayaRender.lib;OpenMayaUI.lib;cg.lib;cgGL.lib;OpenGL32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).mll</OutputFile>
+      <Version>1.3</Version>
+      <AdditionalLibraryDirectories>$(MAYA_PATH2023_X64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
@@ -4986,6 +5431,9 @@ copy "$(ProjectDir)*.mel" "%25MAYA_PATH2012_X64%25\scripts\others"
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2017|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2019|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2020|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2022|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2023|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2024|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2013|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2014|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2015|x64'">Create</PrecompiledHeader>
@@ -4994,6 +5442,9 @@ copy "$(ProjectDir)*.mel" "%25MAYA_PATH2012_X64%25\scripts\others"
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2018|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2019|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2020|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2022|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2023|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugPlugin2024|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseConsole2011|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseConsole2011|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseConsole2012|Win32'">Create</PrecompiledHeader>
@@ -5026,6 +5477,9 @@ copy "$(ProjectDir)*.mel" "%25MAYA_PATH2012_X64%25\scripts\others"
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2017|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2019|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2020|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2022|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2024|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2023|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2013|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2014|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2015|x64'">Create</PrecompiledHeader>
@@ -5034,6 +5488,9 @@ copy "$(ProjectDir)*.mel" "%25MAYA_PATH2012_X64%25\scripts\others"
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2018|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2019|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2020|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2022|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2024|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleasePlugin2023|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="..\src\COLLADAMayaReferenceManager.cpp" />
     <ClCompile Include="..\src\COLLADAMayaRotateHelper.cpp" />
