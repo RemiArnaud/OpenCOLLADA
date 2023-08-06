@@ -59,9 +59,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\COLLADAMayaCgfxShaderIncludes.cpp">
-      <Filter>Source Files\Utils</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\COLLADAMayaPrecompiledHeaders.cpp">
       <Filter>Source Files\Utils</Filter>
     </ClCompile>
@@ -128,9 +125,6 @@
     <ClCompile Include="..\src\COLLADAMayaGeometryPolygonExporter.cpp">
       <Filter>Source Files\Exporters</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\COLLADAMayaHwShaderExporter.cpp">
-      <Filter>Source Files\Exporters</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\COLLADAMayaImageExporter.cpp">
       <Filter>Source Files\Exporters</Filter>
     </ClCompile>
@@ -184,6 +178,12 @@
     </ClCompile>
     <ClCompile Include="..\src\COLLADAMayaLODExporter.cpp">
       <Filter>Source Files\Exporters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\COLLADAMayaHwShaderExporter.cpp">
+      <Filter>Source Files\Exporters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\COLLADAMayaCgfxShaderIncludes.cpp">
+      <Filter>Source Files\Plugin</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

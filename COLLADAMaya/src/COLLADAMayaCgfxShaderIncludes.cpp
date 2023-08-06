@@ -12,8 +12,8 @@
     for details please see LICENSE file or the website
     http://www.opensource.org/licenses/mit-license.php
 */
-
 #include "COLLADAMayaStableHeaders.h"
+#if MAYA_API_VERSION <= 20190300
 
 #ifdef _WIN32
 # pragma warning(disable: 4312)
@@ -65,4 +65,6 @@
 #ifdef _WIN32
 # pragma warning(default: 4312)
 #endif
+
+#endif // (MAYA_API_VERSION <= 20190300) 
 

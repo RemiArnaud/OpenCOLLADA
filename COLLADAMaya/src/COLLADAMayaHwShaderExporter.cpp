@@ -13,6 +13,8 @@
     http://www.opensource.org/licenses/mit-license.php
 */
 
+
+
 #include "COLLADAMayaStableHeaders.h"
 #include "COLLADAMayaHwShaderExporter.h"
 #include "COLLADAMayaEffectExporter.h"
@@ -29,6 +31,7 @@
 
 #include <maya/MFileIO.h>
 
+#if MAYA_API_VERSION <= 20190300
 #if defined(WIN64) && MAYA_API_VERSION >= 201600 && !defined(WIN32)
 /* define WIN32 to work around CFGX WIN64 compilation */
 #define WIN32
@@ -1534,3 +1537,5 @@ namespace COLLADAMaya
     }
 
 }
+
+#endif //  MAYA_API_VERSION <= 20190300
