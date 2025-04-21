@@ -7,6 +7,7 @@
 *.ipch
 *.vs/
 *~
+build/
 CMakeFiles
 cmake_install.cmake
 ZERO_CHECK.vcxproj*

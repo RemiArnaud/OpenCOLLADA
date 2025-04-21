@@ -11,6 +11,7 @@
 #include "no_warning_fstream"
 #include "no_warning_vector"
 #include <sys/stat.h>
+#include <stdint.h>
 
 using namespace std;
 
@@ -20,7 +21,7 @@ namespace opencollada
 {
 	XmlDoc::XmlDoc(XmlDoc && other)
 	{
-		*this = move(other);
+		*this = std::move(other);
 	}
 
 	XmlDoc::~XmlDoc()

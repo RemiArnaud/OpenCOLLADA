@@ -33,14 +33,14 @@ namespace opencollada_test
 			Assert::IsFalse(doc);
 		}
 
-		TEST_METHOD(MoveConstructor)
+		TEST_METHOD(std::MoveConstructor)
 		{
 			XmlDoc doc1;
 			Assert::IsFalse(doc1);
 			doc1.readFile(data_path("xml/file.dae"));
 			Assert::IsTrue(doc1);
 
-			XmlDoc doc2(move(doc1));
+			XmlDoc doc2(std::move(doc1));
 			Assert::IsFalse(doc1);
 			Assert::IsTrue(doc2);
 		}
@@ -64,7 +64,7 @@ namespace opencollada_test
 
 			XmlDoc doc2;
 			Assert::IsFalse(doc2);
-			doc2 = move(doc1);
+			doc2 = std::move(doc1);
 			Assert::IsFalse(doc1);
 			Assert::IsTrue(doc2);
 		}

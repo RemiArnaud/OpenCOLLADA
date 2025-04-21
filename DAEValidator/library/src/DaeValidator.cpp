@@ -7,6 +7,7 @@
 #include "no_warning_iomanip"
 #include "no_warning_iostream"
 #include <set>
+#include <stdint.h>
 #include "no_warning_sstream"
 
 using namespace std;
