@@ -9,7 +9,7 @@ namespace opencollada
 
 	XmlNodeSet::XmlNodeSet(XmlNodeSet&& other)
 	{
-		*this = move(other);
+		*this = std::move(other);
 	}
 
 	XmlNodeSet::~XmlNodeSet()

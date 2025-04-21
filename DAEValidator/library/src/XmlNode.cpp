@@ -105,7 +105,7 @@ namespace opencollada
 
 		XmlNodeSet result(xmlXPathEvalExpression(BAD_CAST xpath.c_str(), context));
 		xmlXPathFreeContext(context);
-		auto p = xpathCache.insert(pair<XPathCacheKey, XmlNodeSet>(XPathCacheKey(mNode, xpath), move(result)));
+		auto p = xpathCache.insert(pair<XPathCacheKey, XmlNodeSet>(XPathCacheKey(mNode, xpath), std::move(result)));
 		return p.first->second;
 	}
 

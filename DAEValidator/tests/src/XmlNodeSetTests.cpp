@@ -21,7 +21,7 @@ namespace opencollada_test
 			{
 				XmlNodeSet nodes;
 				Assert::IsTrue(nodes.empty());
-				XmlNodeSet moved = move(nodes);
+				XmlNodeSet moved = std::move(nodes);
 				Assert::IsTrue(nodes.empty());
 				Assert::IsTrue(moved.empty());
 			}

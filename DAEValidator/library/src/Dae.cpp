@@ -24,14 +24,14 @@ namespace opencollada
 
 	Dae::Dae(Dae && other)
 	{
-		*this = move(other);
+		*this = std::move(other);
 	}
 
 	const Dae & Dae::operator = (Dae && other)
 	{
-		this->XmlDoc::operator=(move(other));
-		mUri = move(other.mUri);
-		mExternalDAEs = move(other.mExternalDAEs);
+		this->XmlDoc::operator=(std::move(other));
+		mUri = std::move(other.mUri);
+		mExternalDAEs = std::move(other.mExternalDAEs);
 		return *this;
 	}
 

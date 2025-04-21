@@ -14,7 +14,7 @@
 #include "COLLADABUPrerequisites.h"
 
 struct real_pcre;
-typedef struct real_pcre pcre;
+#include "pcre.h"
 
 
 namespace COLLADABU

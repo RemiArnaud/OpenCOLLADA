@@ -16,13 +16,13 @@ namespace opencollada_test
 			Assert::IsFalse(schema);
 		}
 
-		TEST_METHOD(MoveConstructor)
+		TEST_METHOD(std::MoveConstructor)
 		{
 			XmlSchema s1;
 			s1.readFile(data_path("xml/COLLADAPhysX3Schema.xsd"));
 			Assert::IsTrue(s1);
 
-			XmlSchema s2 = move(s1);
+			XmlSchema s2 = std::move(s1);
 			Assert::IsFalse(s1);
 			Assert::IsTrue(s2);
 		}
@@ -78,7 +78,7 @@ namespace opencollada_test
 			s1.readFile(data_path("xml/COLLADAPhysX3Schema.xsd"));
 			Assert::IsTrue(s1);
 
-			XmlSchema s2 = move(s1);
+			XmlSchema s2 = std::move(s1);
 			Assert::IsFalse(s1);
 			Assert::IsTrue(s2);
 		}
